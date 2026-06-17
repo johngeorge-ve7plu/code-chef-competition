@@ -1,0 +1,11 @@
+# cook your dish here
+x = int(input())
+for i in range(x):
+    m,n = map(int,input().split())
+    
+    for o in range(m + 1):
+        d = n-3*o
+        
+        if d >= 0 and o+d <= m:
+            print(m-(o+d))
+            break
